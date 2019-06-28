@@ -80,11 +80,11 @@ def all_holidays_with_bbq(holiday_hash)
 answer = []
 holiday_hash.map do |season, data|
   data.map do |holiday, value|
-    holiday if value.include?("BBQ")
-        answer.push(holiday)
+   answer << holiday if value.include?("BBQ")
+
   end 
 end 
- 
+ answer 
 end 
 
 
